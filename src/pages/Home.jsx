@@ -105,9 +105,6 @@ export function Home() {
                 </div>
                 
             </section>
-            <footer>
-                <Contacts visible={true} />
-            </footer>
         </>
     )
 }

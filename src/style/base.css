@@ -288,7 +288,8 @@ textarea:focus::placeholder{
 nav{
     padding: 16px 10vw;
     background-color: var(--first-bg);
-    position: sticky;
+    position: fixed;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -427,6 +428,7 @@ nav a{
     width: fit-content;
     border-radius: 1.2rem;
     border: 1px solid var(--text);
+    background-color: unset;
     cursor:pointer;
 }
 .project-card > button > small {
