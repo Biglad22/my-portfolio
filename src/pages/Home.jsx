@@ -43,8 +43,8 @@ export function Home() {
                             ux design
                         </h6>
                         <span className='info-btn'>
-                            <button type="button" onClick={displayInfo}>
-                                <IconInfo visible={showInfo} />
+                            <button type="button" onClick={displayInfo} >
+                               <h6>contact</h6>  <IconInfo visible={showInfo} />
                             </button>
                             <Contacts visible={showInfo} />
                            
