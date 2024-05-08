@@ -18,7 +18,7 @@ export function ProjectCard({title, link, description, technicals, tools}) {
 
     return( 
         <>
-            <div className={`project-card ${title}`}>
+            <div className={`project-card ${title} ${isShowing ? 'project-active' : ''}`}>
                
                 <a href={link} target="_blank" rel="noopener noreferrer"><h6>{title}</h6></a>
                 

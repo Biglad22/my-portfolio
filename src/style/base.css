@@ -395,13 +395,19 @@ nav a{
     width: fit-content;
     height:fit-content;
     min-height: 35vh;
-    max-height: 35vh;
+    max-height:  35vh;
     padding: calc(1.4rem + 4px) 1.4rem;
     margin-bottom:calc(1.4rem + 4px);
     position:relative;
     background-color: var(--card-bg);
     border-radius: 0.4rem;
 }
+.project-active{
+    height:fit-content;
+    min-height: fit-content;
+    max-height:  fit-content;
+}
+
 .project-card a {
     text-transform: capitalize;    
 }
