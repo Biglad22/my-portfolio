@@ -31,6 +31,10 @@ export const frontend = [
 
 export const others = [
     {
+        name:'RAGE',
+        link: 'https://ragengo.netlify.app'
+    },
+    {
         name:'web3 intro',
         link: 'https://web3intro.netlify.app'
     },
