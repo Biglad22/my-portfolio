@@ -11,6 +11,7 @@ import { frontend } from '../assets/img/project-img/projects';
 import heroImg from '../assets/img/free.png';
 import { OtherProjects } from '../components/other-projects';
 import { others } from '../assets/img/project-img/projects';
+import { useMemo } from 'react';
 
 export function Home() {
 
@@ -19,6 +20,19 @@ export function Home() {
     const displayInfo = () =>{
         setshowInfo((oldValue) => !oldValue);
     };
+
+
+    const years_experience = useMemo(() =>{
+        ///calculate years experience
+        const   start_year = 2023,
+            this_year = new Date().getFullYear(),
+            years_experience = this_year - start_year;
+
+            return years_experience;
+    },[]);
+
+    
+
 
 
 
@@ -64,7 +78,7 @@ export function Home() {
                     <div className="attributes">
                         <Chip text={'available'} emphasize={true} />
                         <Chip text={'english'}  />
-                        <Chip text={'+2 years'} />
+                        <Chip text={`+${years_experience} years`} />
                         <Chip text={'F.C.T - Abuja,  nigeria'} />
                         <Chip link={true} downloadable={true} downloadLink={cv} downloadText={'download CV'} emphasize={true}/>
                         
