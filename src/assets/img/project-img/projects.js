@@ -1,5 +1,4 @@
 import ise from './ise.png';
-import starWars from './starwar.png';
 
 
 export const frontend = [
@@ -12,12 +11,12 @@ export const frontend = [
         technicals:"Designed and developed a task tracking web app that let’s users track time sensitive tasks, drawing inspiration from apps popular task tracking web apps like clockify, I used Figma to design the entire interface. In development, I used Vue frame along with Vite and Tailwind CSS to ensure speed in loading and general user experience, I used firebase and firestore for user authentication and data storage. For a better user experience it was important that the app has offline mode capabilities, hence I used Vuex for state"
     },
     {
-        title: 'star wars universe',
-        img: starWars,
-        link: 'https://swuniverse.netlify.app/',
-        description:'A website that allows users to get information about their favorite Star Wars characters.', 
-        tools:['figma', 'html','css', 'bootstrap', 'javascript'],
-        technicals:"Designed using figma and developed the frontend using JavaScript, HTML, Bootstrap CSS, and RESTful APIs. To Improve loading speed and general user experience I used asynchronous functions for API calls."
+        title: 'Homifi Africa',
+        img: 'https://homifiafrica.com/assets/HomifiLogo.4ff35ce5.svg',
+        link: 'https://homifiafrica.com',
+        description:'A real estate webapp, users can buy and sell properties', 
+        tools:['tailwind','css', 'vue', 'javascript'],
+        technicals:"Utilized Vue.js and Quasar framework to build a user-friendly interface for real estate agents. Assisted with backend development using Express.js and Mongoose, ensuring a robust, scalable solution."
     },
     {
         title: 'youquest',

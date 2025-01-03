@@ -12,8 +12,8 @@ import heroImg from '../assets/img/free.png';
 import { OtherProjects } from '../components/other-projects';
 import { others } from '../assets/img/project-img/projects';
 import { useMemo } from 'react';
-import { Experience } from '../components/Experience';
-import { xp_data } from '../assets/xp';
+// import { Experience } from '../components/Experience';
+// import { xp_data } from '../assets/xp';
 
 export function Home() {
 
@@ -87,7 +87,7 @@ export function Home() {
                     </div>
                 </div>
             </section>
-            <section className='xp-wrapper'>
+            {/* <section className='xp-wrapper'>
                 <h5>
                     Experiences
                 </h5>
@@ -96,7 +96,7 @@ export function Home() {
                         xp_data.map(data =>(<Experience {...data} key={data.company} />))
                     }
                 </div>
-            </section>
+            </section> */}
             <section className='projects'>
                 <h5>
                     Projects
