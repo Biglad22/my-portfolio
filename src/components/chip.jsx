@@ -8,9 +8,8 @@ export function Chip({text, emphasize, link, linkPath, linkText, downloadable, d
                 {
 
                     !link ? (<small>{text}</small>) 
-                    : (downloadable ? (<a href={downloadLink} download ="Aberuagba Emmanuel's CV " ><small className='downloder'><span>{downloadText}</span><FaDownload /></small></a>) 
-                    :  (<a href={linkPath} download><small>{linkText}</small></a>))
-                    
+                    : (downloadable ? (<a href={downloadLink} download ="Aberuagba Emmanuel CV " ><small className='downloder'><span>{downloadText}</span><FaDownload /></small></a>) 
+                    :  (<a href={linkPath} download><small>{linkText}</small></a>))          
                 }
                 
             </div>

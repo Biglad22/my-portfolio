@@ -35,7 +35,7 @@ font-family: 'Montserrat', sans-serif; */
     --prim-color: rgba(234,180,0,1);
 
     /* secondary color for light mode */
-    --sec-l-color:rgba(23,107,135,1);
+    --sec-l-color:rgb(29, 136, 172);
 
     /* secondary color for light mode */
     --sec-d-color:rgba(235,235,235,1);
@@ -288,7 +288,7 @@ textarea:focus::placeholder{
 nav{
     padding: 16px 10vw;
     background-color: var(--first-bg);
-    position: fixed;
+    position: sticky;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -452,6 +452,21 @@ nav a{
     -ms-text-overflow: ellipsis;
     display: -webkit-box;
     overflow: hidden;
+}
+
+/* ============== experience card style ================== */
+
+.xp-card{
+    flex:1;
+    width: fit-content;
+    height:fit-content;
+    min-height: 35vh;
+    max-height:  35vh;
+    padding: calc(1.4rem + 4px) 1.4rem;
+    margin-bottom:calc(1.4rem + 4px);
+    position:relative;
+    background-color: var(--card-bg);
+    border-radius: 0.4rem;
 }
 
 /* ======= styling for other projects ====== */

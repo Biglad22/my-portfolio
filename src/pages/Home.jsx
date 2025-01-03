@@ -4,7 +4,7 @@ import { IconInfo } from '../assets/IconInfo';
 import { Badges } from '../components/badges';
 import { useState } from 'react';
 import { Chip } from '../components/chip';
-import cv from '../assets/downloadables/ABERUAGBA-EMMANUEL-frontend-CV.pdf'
+import cv from '../assets/downloadables/ABERUAGBA-EMMANUEL-frontend-CV.docx'
 import { ProjectCard } from '../components/project-card';
 import {skills} from '../assets/img/skills';
 import { frontend } from '../assets/img/project-img/projects';
@@ -12,6 +12,8 @@ import heroImg from '../assets/img/free.png';
 import { OtherProjects } from '../components/other-projects';
 import { others } from '../assets/img/project-img/projects';
 import { useMemo } from 'react';
+import { Experience } from '../components/Experience';
+import { xp_data } from '../assets/xp';
 
 export function Home() {
 
@@ -83,6 +85,16 @@ export function Home() {
                         <Chip link={true} downloadable={true} downloadLink={cv} downloadText={'download CV'} emphasize={true}/>
                         
                     </div>
+                </div>
+            </section>
+            <section className='xp-wrapper'>
+                <h5>
+                    Experiences
+                </h5>
+                <div className="cards-wrapper"> 
+                    {
+                        xp_data.map(data =>(<Experience {...data} key={data.company} />))
+                    }
                 </div>
             </section>
             <section className='projects'>

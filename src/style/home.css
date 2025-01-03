@@ -203,6 +203,9 @@ section:is(.bio){
 
 @media screen and (max-width:480px) {
    
+    .hero{
+        height: fit-content;
+    }
     .hero  > .hero-img   {
         width: 100%;
         max-height: fit-content;
