@@ -1,8 +1,8 @@
 import '../style/home.css';
-import { Contacts } from '../components/contacts';
-import { IconInfo } from '../assets/IconInfo';
+// import { Contacts } from '../components/contacts';
+// import { IconInfo } from '../assets/IconInfo';
 import { Badges } from '../components/badges';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Chip } from '../components/chip';
 import cv from '../assets/downloadables/ABERUAGBA-EMMANUEL-frontend-CV.docx'
 import { ProjectCard } from '../components/project-card';
@@ -12,16 +12,16 @@ import heroImg from '../assets/img/free.png';
 import { OtherProjects } from '../components/other-projects';
 import { others } from '../assets/img/project-img/projects';
 import { useMemo } from 'react';
-// import { Experience } from '../components/Experience';
-// import { xp_data } from '../assets/xp';
+import { Experience } from '../components/Experience';
+import { xp_data } from '../assets/xp';
 
 export function Home() {
 
     //////////display state of contact info
-    const [showInfo, setshowInfo] = useState(false);
-    const displayInfo = () =>{
-        setshowInfo((oldValue) => !oldValue);
-    };
+    // const [showInfo, setshowInfo] = useState(false);
+    // const displayInfo = () =>{
+    //     setshowInfo((oldValue) => !oldValue);
+    // };
 
 
     const years_experience = useMemo(() =>{
@@ -58,13 +58,13 @@ export function Home() {
                         <h6>
                             ux design
                         </h6>
-                        <span className='info-btn'>
+                        {/* <span className='info-btn'>
                             <button type="button" onClick={displayInfo} >
                                <h6>contact</h6>  <IconInfo visible={showInfo} />
                             </button>
                             <Contacts visible={showInfo} />
                            
-                        </span>
+                        </span> */}
                     </div>
                     <Badges skills={skills} />
                 </div>
@@ -75,7 +75,7 @@ export function Home() {
                         Bio
                     </h5>
                     <p>
-                        As an experienced UX designer and frontend developer, I thrive on creating intuitive digital experiences. My tenure at Amplif Digital sharpened my collaboration skills with UI designers and backend developers. I excel in UX fundamentals, delivering impactful solutions with a user-centric approach. Passionate about pushing boundaries and crafting memorable designs. 
+                    I am a dedicated Front-End Developer with a strong foundation in UX design and a passion for creating user-centric, visually appealing web applications. I am skilled in HTML, CSS, JavaScript, and modern frameworks such as React.js and Vue.js. I excel at translating design concepts into functional interfaces and optimizing application performance. With experience collaborating with cross-functional teams, I deliver seamless and efficient user experiences.
                     </p>
                     <div className="attributes">
                         <Chip text={'available'} emphasize={true} />
@@ -86,17 +86,17 @@ export function Home() {
                         
                     </div>
                 </div>
-            </section>
-            {/* <section className='xp-wrapper'>
-                <h5>
-                    Experiences
-                </h5>
-                <div className="cards-wrapper"> 
-                    {
-                        xp_data.map(data =>(<Experience {...data} key={data.company} />))
-                    }
+                <div className='xp-wrapper'>
+                    <h5>
+                        Experiences
+                    </h5>
+                    <div className="cards-wrapper"> 
+                        {
+                            xp_data.map(data =>(<Experience job_title={data.job_title} year={data.year} company={data.company} key={data.company} />))
+                        }
+                    </div>
                 </div>
-            </section> */}
+            </section>
             <section className='projects'>
                 <h5>
                     Projects

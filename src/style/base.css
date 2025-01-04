@@ -293,7 +293,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     top: 0;
     left: 0;
     z-index: 100;
@@ -307,6 +307,21 @@ nav a{
     color: var(--text);
     text-decoration: none;
     font-weight: 700;
+}
+
+nav > .contacts {
+    position: relative;
+    background-color: unset;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 0.5rem;
+    height: fit-content;
+}
+
+nav > .contacts > a:nth-child(2){
+    margin: 0;
 }
 
 
@@ -458,15 +473,25 @@ nav a{
 
 .xp-card{
     flex:1;
-    width: fit-content;
+    width: 100%;
     height:fit-content;
-    min-height: 35vh;
-    max-height:  35vh;
     padding: calc(1.4rem + 4px) 1.4rem;
-    margin-bottom:calc(1.4rem + 4px);
     position:relative;
     background-color: var(--card-bg);
     border-radius: 0.4rem;
+}
+.xp-header{
+    margin-bottom: 1rem;
+    color: var(--text-h);
+}
+.xp-company > span{
+    margin-right: 1rem;
+    font-weight: 700;
+    color: var(--text-m);
+}
+.xp-company > small{
+    font-style: italic;
+    color: var(--text-m);
 }
 
 /* ======= styling for other projects ====== */

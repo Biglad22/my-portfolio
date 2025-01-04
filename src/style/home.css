@@ -91,7 +91,7 @@ section:is(.bio){
 
 
 /* ============= bio section ================= */
-.bio-header h6{
+.bio-header h5{
     font-weight: 600;
     text-transform: capitalize;
     color: var(--text-h);
@@ -100,7 +100,7 @@ section:is(.bio){
     color: var(--text-m);
 }
 .bio-header > *{
-    margin-bottom: 1.2rem;
+    margin-bottom: 2.4rem;
 }
 
 
@@ -115,6 +115,10 @@ section:is(.bio){
 /* =========styling for project section ========= */
 .projects h5{
     margin-bottom: 2.4rem; 
+}
+
+.xp-wrapper h5{
+    margin-bottom: 1.4rem; 
 }
 
 .frontend > small,  .other-projects small:not(.card-link){
@@ -166,13 +170,26 @@ section:is(.bio){
     .hero  > .name{
         flex: 0 1 content;
         height: fit-content;
-    } 
+    }
+    
+    .hero  > .name > h1{
+        color: var(--text)
+    }
+
     .hero  > .name > .role{
         width: 100%;
         justify-content: center;
     }
     .hero  > .name > .skills-container{
         justify-content: center;
+    }
+
+    /* bio section */
+    .xp-wrapper .cards-wrapper{
+        flex-direction: column;
+    }
+    .cards-wrapper{
+        flex-direction: column;
     }
 
     /*other projects styling*/
