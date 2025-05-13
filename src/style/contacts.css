@@ -1,7 +1,7 @@
-@import './base.css';
+@import "./base.css";
 
-.contacts{
-    padding: 8px;
+.contacts {
+    padding: 4px;
     border-radius: 4px;
     background-color: var(--card-bg);
     box-shadow: 0 0 4px 0 var(--card-bg);
@@ -10,23 +10,21 @@
     visibility: visible;
 }
 
-.icon{
-    width: 4.8vmin;
+.icon {
+    width: 4vmin;
 }
 
-a{
+a {
     display: block;
     width: fit-content;
     padding: 4px;
     box-sizing: content-box;
-   
 }
 
-.contacts a:nth-child(2){
+.contacts a:nth-child(2) {
     margin-block: 4px;
 }
 
-.invisible{
+.invisible {
     visibility: hidden;
-    
 }

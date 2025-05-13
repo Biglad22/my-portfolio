@@ -1,20 +1,19 @@
-@import './base.css';
-section{
+@import "./base.css";
+section {
     padding: 5vmin 10vw;
-
 }
 
-section:is(.bio){
+section:is(.bio) {
     padding-block: 10vmin;
 }
 
 @media screen and (min-width: 1440px) {
-    section{
+    section {
         padding-inline: calc((100% - 1300px) / 2);
     }
 }
 
-.hero{
+.hero {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -32,42 +31,40 @@ section:is(.bio){
 }
 
 .hero > .name {
-    flex-basis:content;
+    flex-basis: content;
 }
 
-.hero h1{
+.hero h1 {
     text-transform: capitalize;
-    margin-block: 16px;
 }
 
-.hero .name{
-    width:fit-content;
+.hero .name {
+    width: fit-content;
 }
 
-.hero .name h4{
+.hero .name h4 {
     text-transform: capitalize;
     font-weight: 400;
 }
 
-.hero .role{
+.hero .role {
     display: flex;
     flex-wrap: wrap;
-    gap:1.6rem;
+    gap: 1.6rem;
     align-items: center;
     width: fit-content;
     margin-block: 16px;
+}
 
-} 
-
-.hero .role h6{
+.hero .role h6 {
     text-transform: uppercase;
     width: fit-content;
-    color:var(--text-m);
+    color: var(--text-m);
     font-weight: 400;
     padding-block: 8px;
 }
 
-.info-btn{
+.info-btn {
     position: relative;
     width: fit-content;
 }
@@ -82,30 +79,28 @@ section:is(.bio){
     justify-content: center;
 }
 
-.contacts{
+.contacts {
     position: absolute;
     right: 0;
     z-index: 10;
     top: calc(100% + 4px);
 }
 
-
 /* ============= bio section ================= */
-.bio-header h5{
+.bio-header h5 {
     font-weight: 600;
     text-transform: capitalize;
     color: var(--text-h);
 }
-.bio-header p{
+.bio-header p {
     color: var(--text-m);
 }
-.bio-header > *{
+.bio-header > * {
     margin-bottom: 2.4rem;
 }
 
-
 /* ==attribute ============ */
-.attributes{
+.attributes {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -113,130 +108,129 @@ section:is(.bio){
 }
 
 /* =========styling for project section ========= */
-.projects h5{
-    margin-bottom: 2.4rem; 
+.projects h5 {
+    margin-bottom: 2.4rem;
 }
 
-.xp-wrapper h5{
-    margin-bottom: 1.4rem; 
+.xp-wrapper h5 {
+    margin-bottom: 1.4rem;
 }
 
-.frontend > small,  .other-projects small:not(.card-link){
+.frontend > small,
+.other-projects small:not(.card-link) {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 0.25rem;
-    color:var(--text-m);
-    margin-block:1.2rem;
+    color: var(--text-m);
+    margin-block: 1.2rem;
     display: block;
-
 }
 
-.cards-wrapper{
+.cards-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
     align-items: start;
     justify-content: center;
-    
 }
-.cards-wrapper > div{
+.cards-wrapper > div {
     flex: 1;
+    min-width: 40%;
 }
 
 /*=============== other-projects styling ========*/
-.other-projects{
+.other-projects {
     margin-block: 15vh;
 }
 
 .other-projects .cards-wrapper {
     gap: 2.4rem;
 }
-.other-projects .cards-wrapper > div{
+.other-projects .cards-wrapper > div {
     flex: 1 1 calc(50% - 1.2rem);
 }
 
-
-
 /*================responsiveness ========== media queries =============*/
-@media screen and (max-width:1024px) {
-    .hero{
+@media screen and (max-width: 1024px) {
+    .hero {
         flex-direction: column;
         flex-wrap: wrap;
     }
-    .hero  > .hero-img   {
-        flex: 1 ;
-        max-height:50%;
+    .hero > .hero-img {
+        flex: 1;
+        max-height: 50%;
     }
-    .hero  > .name{
+    .hero > .name {
         flex: 0 1 content;
         height: fit-content;
     }
-    
-    .hero  > .name > h1{
-        color: var(--text)
+
+    .hero > .name > h1 {
+        color: var(--text);
     }
 
-    .hero  > .name > .role{
+    .hero > .name > .role {
         width: 100%;
         justify-content: center;
     }
-    .hero  > .name > .skills-container{
+    .hero > .name > .skills-container {
         justify-content: center;
     }
 
     /* bio section */
-    .xp-wrapper .cards-wrapper{
+    .xp-wrapper .cards-wrapper {
         flex-direction: column;
     }
-    .cards-wrapper{
+    .cards-wrapper {
         flex-direction: column;
     }
 
     /*other projects styling*/
-    .other-projects .cards-wrapper > div{
-        flex: 1 1 100% !important;
+    .other-projects .cards-wrapper > div {
+        flex: 0 0 100% !important;
+        width: 100%;
     }
 }
 
-@media screen and (max-width:979px){
+@media screen and (max-width: 979px) {
     .project-card:first-child {
         flex-basis: 100%;
         min-height: fit-content;
     }
+    .project-card {
+        flex-basis: 100%;
+        width: 100%;
+    }
 }
 
-@media screen and (max-width:555px){
-    .hero  > .name{
+@media screen and (max-width: 555px) {
+    .hero > .name {
         text-align: center;
     }
     .projects .frontend .cards-wrapper {
         flex-direction: column;
     }
 
-    .projects .frontend .cards-wrapper > div{
+    .projects .frontend .cards-wrapper > div {
         min-height: fit-content;
     }
 }
 
-@media screen and (max-width:480px) {
-   
-    .hero{
+@media screen and (max-width: 480px) {
+    .hero {
         height: fit-content;
     }
-    .hero  > .hero-img   {
+    .hero > .hero-img {
         width: 100%;
         max-height: fit-content;
         flex: 0 1 content;
     }
-    .hero  > .hero-img  > img  {
+    .hero > .hero-img > img {
         width: 100%;
-        max-height:none;
+        max-height: none;
     }
-    .hero  > .name{
+    .hero > .name {
         flex: 0 1 content;
         height: fit-content;
-    } 
-
+    }
 }
-
-

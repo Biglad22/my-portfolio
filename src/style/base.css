@@ -1,81 +1,79 @@
-
 /* font family import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif; */
 
-*,::after, ::before{
+*,
+::after,
+::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-
+:root {
     /* backgrounds for light mode */
-    --background-l-first:rgba(255,255,255,1); 
-    --background-l-sec:rgba(243,247,249,1);
-    --background-l-form:rgba(247,247,247);
-    --nav-foot-bg:rgba(18,18,18,1);
+    --background-l-first: rgba(255, 255, 255, 1);
+    --background-l-sec: rgba(243, 247, 249, 1);
+    --background-l-form: rgba(247, 247, 247);
+    --nav-foot-bg: rgba(18, 18, 18, 1);
 
     /* emphasis */
-    --emphasis-l-bg:rgba(18,18,18,1);
-    --emphasis-l-text:rgba(250,250,250,1);
+    --emphasis-l-bg: rgba(18, 18, 18, 1);
+    --emphasis-l-text: rgba(250, 250, 250, 1);
 
-    --emphasis-d-bg:rgba(250,250,250,1);
-    --emphasis-d-text:rgba(18,18,18,1);
-
+    --emphasis-d-bg: rgba(250, 250, 250, 1);
+    --emphasis-d-text: rgba(18, 18, 18, 1);
 
     /* backgrounds for dark mode */
-    --background-d-first:rgba(13,13,13,1); 
-    --background-d-sec:rgba(22,22,22,1);
-    --background-d-form:rgba(22,22,22,1);
+    --background-d-first: rgba(13, 13, 13, 1);
+    --background-d-sec: rgba(22, 22, 22, 1);
+    --background-d-form: rgba(22, 22, 22, 1);
 
-    --prim-color: rgba(234,180,0,1);
-
-    /* secondary color for light mode */
-    --sec-l-color:rgb(29, 136, 172);
+    --prim-color: rgba(234, 180, 0, 1);
 
     /* secondary color for light mode */
-    --sec-d-color:rgba(235,235,235,1);
+    --sec-l-color: #3178c6;
+
+    /* secondary color for light mode */
+    --sec-d-color: rgba(235, 235, 235, 1);
 
     /* card background color */
     /*light mode card*/
-    --card-l-bg:rgba(245,245,245,1);
+    --card-l-bg: rgba(245, 245, 245, 1);
 
     /*dark mode card*/
-    --card-d-bg:rgba(24,24,24,1);
+    --card-d-bg: rgba(24, 24, 24, 1);
 
     /* texts color */
     /* black text */
-    --text-b: rgba(0,0,0,1);
-    --text-b-h: rgba(0,0,0,0.83);
-    --text-b-m: rgba(0,0,0,0.6);
-    --text-b-l: rgba(0,0,0,0.3);
+    --text-b: rgba(0, 0, 0, 1);
+    --text-b-h: rgba(0, 0, 0, 0.83);
+    --text-b-m: rgba(0, 0, 0, 0.6);
+    --text-b-l: rgba(0, 0, 0, 0.3);
 
     /* white text */
-    --text-w: rgba(255,255,255,1);
-    --text-w-h: rgba(255,255,255,0.83);
-    --text-w-m: rgba(255,255,255,0.6);
-    --text-w-l: rgba(255,255,255,0.3);
+    --text-w: rgba(255, 255, 255, 1);
+    --text-w-h: rgba(255, 255, 255, 0.83);
+    --text-w-m: rgba(255, 255, 255, 0.6);
+    --text-w-l: rgba(255, 255, 255, 0.3);
 }
 
 /*light mode config*/
-@media (prefers-color-scheme:light){
-    :root{
-
+@media (prefers-color-scheme: light) {
+    :root {
         /* background color */
-        --first-bg:var(--background-l-first);
-        --sec-bg:var(--background-l-sec);
-        --form-bg:var(--background-l-form);
-        --nav-footer-bg:var(--nav-foot-bg);
+        --first-bg: var(--background-l-first);
+        --sec-bg: var(--background-l-sec);
+        --form-bg: var(--background-l-form);
+        --nav-footer-bg: var(--nav-foot-bg);
 
         /* secondary color for light mode */
-        --sec-color:var(--sec-l-color);
+        --sec-color: var(--sec-l-color);
 
         /*card bg*/
-        --card-bg:var(--card-l-bg);
+        --card-bg: var(--card-l-bg);
 
         /* text for light theme */
         --text: var(--text-b);
@@ -84,31 +82,29 @@ font-family: 'Montserrat', sans-serif; */
         --text-l: var(--text-b-l);
 
         /* emphasis */
-        --emphasis-bg:var(--emphasis-l-bg);
-        --emphasis-text:var(--emphasis-l-text);
-        
+        --emphasis-bg: var(--emphasis-l-bg);
+        --emphasis-text: var(--emphasis-l-text);
     }
-    body{
+    body {
         background-color: var(--first-bg);
         color: var(--text-h);
     }
 }
 
 /*dark mode config*/
-@media (prefers-color-scheme:dark){
-    :root{
-
+@media (prefers-color-scheme: dark) {
+    :root {
         /* background color */
-        --first-bg:var(--background-d-first);
-        --sec-bg:var(--background-d-sec);
-        --form-bg:var(--background-d-form);
-        --nav-footer-bg:var(--nav-foot-bg);
+        --first-bg: var(--background-d-first);
+        --sec-bg: var(--background-d-sec);
+        --form-bg: var(--background-d-form);
+        --nav-footer-bg: var(--nav-foot-bg);
 
         /* secondary color for light mode */
-        --sec-color:var(--sec-d-color);
+        --sec-color: var(--sec-d-color);
 
         /*card bg*/
-        --card-bg:var(--card-d-bg);
+        --card-bg: var(--card-d-bg);
 
         /* text for light theme */
         --text: var(--text-w);
@@ -117,92 +113,116 @@ font-family: 'Montserrat', sans-serif; */
         --text-l: var(--text-w-l);
 
         /* emphasis */
-        --emphasis-bg:var(--emphasis-d-bg);
-        --emphasis-text:var(--emphasis-d-text);
-        
+        --emphasis-bg: var(--emphasis-d-bg);
+        --emphasis-text: var(--emphasis-d-text);
     }
-    body{
+    body {
         background-color: var(--first-bg);
-        color:var(--text-h);
+        color: var(--text-h);
     }
 }
 
-html{
-    font-size: calc(5px + 1vmin);
+html {
+    font-size: calc(7.5px + 0.5vmin);
 }
 
-body{
-    font-family:'Lato', sans-serif;
+body {
+    font-family: "Lato", sans-serif;
     background-color: var(--first-bg);
 }
 
-h1,h2,h3,h4,h5,h6,p,small,div,span,textarea,input{
-    font-family:'Lato', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+div,
+span,
+textarea,
+input {
+    font-family: "Lato", sans-serif;
 }
 
-h1{
-    font-size: 4.0rem;
+h1 {
+    font-size: 4rem;
 }
-h2{
-    font-size:  3.5rem ;
+h2 {
+    font-size: 3.5rem;
 }
-h3{
-    font-size:  3.0rem ;
+h3 {
+    font-size: 3rem;
 }
-h4{
-    font-size:  2.5rem ;
+h4 {
+    font-size: 2.5rem;
 }
-h5{
-    font-size:  2.0rem ;
+h5 {
+    font-size: 2rem;
 }
-h6{
-    font-size: 1.8rem ;
+h6 {
+    font-size: 1.8rem;
 }
-p, button, input, li, a, textarea, textarea::placeholder{
-    font-size:  1.5rem ;
+p,
+button,
+input,
+li,
+a,
+textarea,
+textarea::placeholder {
+    font-size: 1.5rem;
     text-decoration: none;
 }
-small{
-    font-size:  1.2rem ;
+small {
+    font-size: 1.2rem;
 }
-a{
+a {
     text-decoration: none;
     color: var(--text);
-    font-weight:700;
+    font-weight: 700;
 }
 
 /* button config */
 
-.cta-btn{
-    background-image: linear-gradient(to right, rgba(211,162,0,1), rgba(255,215,42,1));
+.cta-btn {
+    background-image: linear-gradient(
+        to right,
+        rgba(211, 162, 0, 1),
+        rgba(255, 215, 42, 1)
+    );
     font-weight: 500;
     color: var(--text);
-    border:none;
+    border: none;
     text-transform: uppercase;
     border-radius: 0.4rem;
     padding: 0.8rem 1.6rem;
 }
 
-.cta-btn:disabled{
-    background-image: linear-gradient(to right, rgba(211,162,0,0.3), rgba(255,215,42,0.3));
+.cta-btn:disabled {
+    background-image: linear-gradient(
+        to right,
+        rgba(211, 162, 0, 0.3),
+        rgba(255, 215, 42, 0.3)
+    );
     color: var(--text-l);
 }
 
-.outlined-btn{
+.outlined-btn {
     font-weight: 500;
     color: var(--prim-color);
-    border:0.2rem solid var(--prim-color);
+    border: 0.2rem solid var(--prim-color);
     background-color: unset;
     border-radius: 0.4rem;
     padding: 0.6rem 1.6rem;
     text-transform: uppercase;
 }
 
-.text-btn{
+.text-btn {
     font-weight: 500;
     color: var(--prim-color);
     border: none;
-    border-bottom: 0.2rem  solid var(--prim-color) ;
+    border-bottom: 0.2rem solid var(--prim-color);
     background-color: unset;
     padding: 0.8rem 0.2rem;
     padding-bottom: 0.6rem;
@@ -210,82 +230,82 @@ a{
 }
 
 /* input field appearance style */
-input[type = 'text'],
-input[type = 'email'],
-input[type = 'password'],
-input[type = 'number'], textarea{
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
     display: block;
     background-color: unset;
     padding: 0.8rem;
     padding-bottom: 0.4rem;
     margin-bottom: 0.2rem;
     border: none;
-    border-bottom: 0.2rem  solid var(--text-l) ;
+    border-bottom: 0.2rem solid var(--text-l);
     background-color: unset;
     color: var(--text-h);
     transition: all 0.25s;
-    position:relative;
+    position: relative;
 }
 
-input[type = 'text']::placeholder,
-input[type = 'email']::placeholder,
-input[type = 'password']::placeholder,
-input[type = 'number']::placeholder,
-textarea::placeholder{
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="number"]::placeholder,
+textarea::placeholder {
     text-transform: capitalize;
     color: var(--text-m);
     transition: all 0.25s;
 }
 
-
-input[type = 'text']:focus,
-input[type = 'email']:focus,
-input[type = 'password']:focus,
-input[type = 'number']:focus,
-textarea:focus{
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus {
     background-color: unset;
-    border-bottom: 0.2rem  solid var(--text-m) ;
+    border-bottom: 0.2rem solid var(--text-m);
     background-color: unset;
     outline: none;
     transition: all 0.25s;
-    font-family:initial;
+    font-family: initial;
 }
 
-input[type = 'text']:focus::placeholder,
-input[type = 'email']:focus::placeholder,
-input[type = 'password']:focus::placeholder,
-input[type = 'number']:focus::placeholder,
-textarea:focus::placeholder{
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder,
+input[type="password"]:focus::placeholder,
+input[type="number"]:focus::placeholder,
+textarea:focus::placeholder {
     color: var(--text-l);
-    font-family:'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     transition: all 0.25s;
 }
 
-
 /* headers and bodytext styling */
 /* use for headers that are of secondary color NB:secondary color is blue or ash depending on the prefered color scheme */
-.important-header{
-    color:var(--sec-color);
+.important-header {
+    color: var(--sec-color);
     text-transform: capitalize;
 }
 
 /* use for regular color headers  */
-.main-header, .sub-header{
-    color:var(--text-h);
+.main-header,
+.sub-header {
+    color: var(--text-h);
     text-transform: capitalize;
 }
 
 /* body texts are paragraph texts */
-.body-text{
-    color:var(--text-m);
+.body-text {
+    color: var(--text-m);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
 /* ========styling for nav bar======================== */
-nav{
+nav {
     padding: 16px 10vw;
     background-color: var(--first-bg);
     position: sticky;
@@ -297,14 +317,14 @@ nav{
     top: 0;
     left: 0;
     z-index: 100;
-    box-shadow: 0 12qw1px 4px 0 var(--first-bg);
+    box-shadow: 0 6px 20px 4px var(--first-bg);
 }
 
-nav a{
+nav a {
     display: block;
     padding: 8px;
     text-transform: uppercase;
-    color: var(--text);
+    color: var(--sec-l-color);
     text-decoration: none;
     font-weight: 700;
 }
@@ -320,56 +340,30 @@ nav > .contacts {
     height: fit-content;
 }
 
-nav > .contacts > a:nth-child(2){
+nav > .contacts > a:nth-child(2) {
     margin: 0;
 }
 
-
 /* ========styling for skill bade===== */
-.skills-container{
+.skills-container {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
-.skill-badge{
-    width: 2.8rem;
-    height: 2.8rem;
-    border-radius: 2.8rem;
-    border: 2px solid var(--card-bg);
-    box-shadow: 0 0 4px 0 var(--card-bg) ;
-    padding: 0.5rem;
-}
-
-.skill-badge-contained{
-    width: 2.0rem;
-    height: 2.0rem;
-    border-radius: 2.0rem;
-    border: none;
-    background-color: var(--first-bg);
-    box-shadow: 0 0 4px 0 var(--card-bg) ;
-    padding: 0.5rem;
-}
-
-.skill-badge img, .skill-badge-contained img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    -o-object-fit:contain;
-    object-position: center;
-    -o-object-position: center;
-}
 
 /* ======== chips ===================== */
-.chip-wrapper{
-    padding: 4px 16px;
+.chip-wrapper {
+    padding: 8px 16px;
     width: fit-content;
-    border-radius: 1.2rem;
+    border-radius: 2rem;
+    letter-spacing: 0.5px;
     background-color: var(--card-bg);
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
 }
 .chip-wrapper small {
     color: var(--text-m);
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.2rem;
 }
 .chip-wrapper a {
@@ -377,80 +371,78 @@ nav > .contacts > a:nth-child(2){
     line-height: 1.2rem;
 }
 
-
-.emphasize{
+.emphasize {
     background-color: var(--emphasis-bg);
 }
-.downloadable{
+.downloadable {
     background-color: var(--sec-l-color);
+    transition: all 0.3s ease-in-out;
 }
 
-.emphasize small, .downloadable small{
+.emphasize small,
+.downloadable small {
     color: var(--emphasis-text);
 }
 
-.chip-wrapper a[download=true]{
+.chip-wrapper a[download="true"] {
     background-color: var(--sec-l-color);
 }
 
-.chip-wrapper .downloder{
+.downloadable:hover {
+    box-shadow: 0 0px 3px var(--sec-l-color);
+}
+
+.chip-wrapper .downloder {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 8px;
     cursor: pointer;
-    
 }
 
-
-
-
 /* ======== styling project card ======= */
-.project-card{
+.project-card {
     width: fit-content;
-    height:fit-content;
+    height: fit-content;
     min-height: 35vh;
-    max-height:  35vh;
+    max-height: 35vh;
     padding: calc(1.4rem + 4px) 1.4rem;
-    margin-bottom:calc(1.4rem + 4px);
-    position:relative;
+    padding-bottom: 4rem;
+    margin-bottom: calc(1.4rem + 4px);
+    position: relative;
     background-color: var(--card-bg);
     border-radius: 0.4rem;
 }
-.project-active{
-    height:fit-content;
+.project-active {
+    height: fit-content;
     min-height: fit-content;
-    max-height:  fit-content;
 }
 
 .project-card a {
-    text-transform: capitalize;    
+    text-transform: capitalize;
 }
-
 
 .project-card small {
-    color:var(--text-m);    
+    color: var(--text-m);
 }
 
-.project-card > *:not(:nth-child(2)){
+.project-card > * {
     margin-bottom: 1.4rem;
 }
 
-.project-card .skills-container{
+.project-card .skills-container {
     position: absolute;
-    bottom:0;
-    right:1.4rem;
-    transform: translateY(50%);
-
+    bottom: 0;
+    right: 1.4rem;
 }
 
-.project-card > button{
+.project-card > button {
     padding: 2px 8px;
     width: fit-content;
     border-radius: 1.2rem;
     border: 1px solid var(--text);
     background-color: unset;
-    cursor:pointer;
+    cursor: pointer;
 }
 .project-card > button > small {
     color: var(--text);
@@ -459,8 +451,8 @@ nav > .contacts > a:nth-child(2){
     line-height: 1.2rem;
 }
 
-.project-card > .desc > p{
-    -webkit-line-clamp: 4; 
+.project-card > .desc > p {
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
@@ -471,46 +463,49 @@ nav > .contacts > a:nth-child(2){
 
 /* ============== experience card style ================== */
 
-.xp-card{
-    flex:1;
+.xp-card {
+    flex: 1;
     width: 100%;
-    height:fit-content;
+    height: fit-content;
     padding: calc(1.4rem + 4px) 1.4rem;
-    position:relative;
+    position: relative;
     background-color: var(--card-bg);
     border-radius: 0.4rem;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease-in-out;
 }
-.xp-header{
+
+.xp-header {
     margin-bottom: 1rem;
     color: var(--text-h);
 }
-.xp-company > span{
+.xp-company > span {
     margin-right: 1rem;
-    font-weight: 700;
-    color: var(--text-m);
+    font-weight: 500;
+    color: var(--text-h);
 }
-.xp-company > small{
+.xp-company > small {
     font-style: italic;
     color: var(--text-m);
 }
 
 /* ======= styling for other projects ====== */
 
-.other-proj-wrapper p{
+.other-proj-wrapper p {
     margin-bottom: 16px;
 }
-.other-proj-wrapper  a{
-    color:  var(--sec-l-color);
+.other-proj-wrapper a {
+    color: var(--sec-l-color);
     text-transform: capitalize;
     font-size: inherit;
 }
 
-.other-proj-wrapper iframe{
+.other-proj-wrapper iframe {
     width: 100%;
     height: 50vh;
     border-radius: 0.4rem;
 }
 
-.other-proj-wrapper iframe::-webkit-scrollbar{
+.other-proj-wrapper iframe::-webkit-scrollbar {
     display: none;
 }
