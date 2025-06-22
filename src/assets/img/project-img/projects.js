@@ -30,19 +30,27 @@ export const frontend = [
         technicals:
             "Designed and developed a task tracking web app that let’s users track time sensitive tasks, drawing inspiration from apps popular task tracking web apps like clockify, I used Figma to design the entire interface. In development, I used Vue frame along with Vite and Tailwind CSS to ensure speed in loading and general user experience, I used firebase and firestore for user authentication and data storage. For a better user experience it was important that the app has offline mode capabilities, hence I used Vuex for state",
     },
-    {
-        title: "youquest",
-        img: null,
-        link: "https://youquest.netlify.app/",
-        description:
-            "Webapp presents users with 20 trivia questions based on the selected subject matter. Designed the frontend for an engaging user experience.",
-        tools: ["html", "css", "bootstrap", "javascript"],
-        technicals:
-            "Designed and developed a task tracking web app that let’s users track time sensitive tasks, drawing inspiration from apps popular task tracking web apps like clockify, I used Figma to design the entire interface. In development, I used Vue frame along with Vite and Tailwind CSS to ensure speed in loading and general user experience, I used firebase and firestore for user authentication and data storage. For a better user experience it was important that the app has offline mode capabilities, hence I used Vuex for state management and local storage to maintain offline mode data.",
-    },
+    // {
+    //     title: "youquest",
+    //     img: null,
+    //     link: "https://youquest.netlify.app/",
+    //     description:
+    //         "Webapp presents users with 20 trivia questions based on the selected subject matter. Designed the frontend for an engaging user experience.",
+    //     tools: ["html", "css", "bootstrap", "javascript"],
+    //     technicals:
+    //         "Designed and developed a task tracking web app that let’s users track time sensitive tasks, drawing inspiration from apps popular task tracking web apps like clockify, I used Figma to design the entire interface. In development, I used Vue frame along with Vite and Tailwind CSS to ensure speed in loading and general user experience, I used firebase and firestore for user authentication and data storage. For a better user experience it was important that the app has offline mode capabilities, hence I used Vuex for state management and local storage to maintain offline mode data.",
+    // },
 ];
 
 export const others = [
+    {
+        name: "savuney",
+        link: "https://savuney.com",
+    },
+    {
+        name: "IWB Africa",
+        link: "https://iwbafrica.org",
+    },
     {
         name: "RAGE",
         link: "https://ragengo.netlify.app",
@@ -55,10 +63,7 @@ export const others = [
         name: "opium",
         link: "https://somethingnft.netlify.app",
     },
-    {
-        name: "phototruth",
-        link: "https://phototruth.netlify.app",
-    },
+
     {
         name: "blossoms",
         link: "https://fashionbyblossoms.netlify.app",

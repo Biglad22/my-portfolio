@@ -39,6 +39,7 @@ export const xp_data = [
             "Integrated Uniswap SDK and web3-react to enable token swaps and wallet connectivity within the Kromatika trading platform.",
             "Worked with ethers.js to interact with smart contracts, handle on-chain data, and manage blockchain transaction states.",
             "Collaborated with product and blockchain engineering teams to ensure smooth integration of frontend logic with smart contract functionality.",
+            "Improve performance of Kromatika trading platform.",
             "Maintained reusable UI components and emphasized performance, responsiveness, and codebase scalability in a fast-paced Web3 environment.",
         ],
     },
