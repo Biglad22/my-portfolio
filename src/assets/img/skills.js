@@ -1,7 +1,7 @@
 import figma from "./figma.png";
-import xd from "./xd.png";
-import html from "./html-5.png";
-import css from "./css-3.png";
+// import xd from "./xd.png";
+// import html from "./html-5.png";
+// import css from "./css-3.png";
 import boot from "./bootstrap.png";
 import js from "./js.png";
 import vue from "./vue-logo.svg";
