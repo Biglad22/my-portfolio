@@ -2,21 +2,24 @@ import ise from "./ise.png";
 
 export const frontend = [
     {
-        title: "Homifi Africa",
-        img: "https://homifiafrica.com/assets/HomifiLogo.4ff35ce5.svg",
-        link: "https://homifiafrica.com",
-        description: "A real estate webapp, users can buy and sell properties",
-        tools: ["html", "css", "tailwind", "typescript", "vue", "node"],
+        title: "Tabitha AI",
+        img: "https://testfrontfortabithaai.netlify.app/favicon.png",
+        link: "https://testfrontfortabithaai.netlify.app/",
+        description: "A web app built for the Tabitha Cumi Foundation to help marginalized women and children submit reports safely and access support resources.",
+        tools: ["react-router-v7","typescript", "redux-toolkit", "tanstack-query", "axios", "tailwind"],
+        inService: true,
         technicals:
-            "Utilized Vue.js and Quasar framework to build a user-friendly interface for real estate agents. Assisted with backend development using Express.js and Mongoose, ensuring a robust, scalable solution.",
+            "Developed a secure and responsive web application using React Router v7 for dynamic routing and state management with Redux Toolkit. Integrated TanStack Query with Axios for efficient data fetching and synchronization, ensuring a seamless and performant user experience.",
     },
+
     {
         title: "FLXT",
         img: "https://flxtime.fun/assets/img/Logo.png",
         link: "https://flxtime.fun/",
         description:
             "A Dapp that lets users track their FLXT token mining activities",
-        tools: ["html", "css", "tailwind", "javascript", "react", "solana"],
+        tools: ["react", "tailwind", "solana"],
+        inService:true,
         technicals:
             "Built a responsive and user-friendly interface using React and Tailwind CSS to enable users to monitor their FLXT mining activities. Leveraged advanced React hooks such as useCallback, useMemo, memo, and lazy loading to optimize performance and UI responsiveness. Integrated Solana Wallet Adapter to seamlessly manage wallet connections within the dApp, ensuring smooth interaction with the Solana blockchain.",
     },
@@ -26,9 +29,20 @@ export const frontend = [
         link: "https://isetimer.netlify.app",
         description:
             "A task track webapp, users can create and time their daily tasks",
-        tools: ["figma", "html", "css", "tailwind", "javascript", "vue"],
+        tools: ["figma", "tailwind", "vue"],
+        inService:true,
         technicals:
-            "Designed and developed a task tracking web app that let’s users track time sensitive tasks, drawing inspiration from apps popular task tracking web apps like clockify, I used Figma to design the entire interface. In development, I used Vue frame along with Vite and Tailwind CSS to ensure speed in loading and general user experience, I used firebase and firestore for user authentication and data storage. For a better user experience it was important that the app has offline mode capabilities, hence I used Vuex for state",
+            "Designed and developed a task tracking web app that let's users track time sensitive tasks, drawing inspiration from apps popular task tracking web apps like clockify, I used Figma to design the entire interface. In development, I used Vue frame along with Vite and Tailwind CSS to ensure speed in loading and general user experience, I used firebase and firestore for user authentication and data storage. For a better user experience it was important that the app has offline mode capabilities, hence I used Vuex for state",
+    },
+    {
+        title: "Homifi Africa",
+        img: "https://homifiafrica.com/assets/HomifiLogo.4ff35ce5.svg",
+        link: "https://homifiafrica.com",
+        description: "A real estate webapp, users can buy and sell properties",
+        tools: ["vue", "tailwind", "typescript", "node"],
+        inService:false,
+        technicals:
+            "Utilized Vue.js and Quasar framework to build a user-friendly interface for real estate agents. Assisted with backend development using Express.js and Mongoose, ensuring a robust, scalable solution.",
     },
     // {
     //     title: "youquest",
@@ -45,7 +59,7 @@ export const frontend = [
 export const others = [
     {
         name: "savuney",
-        link: "https://savuney.com",
+        link: "https://banktestfront.netlify.app/",
     },
     {
         name: "IWB Africa",

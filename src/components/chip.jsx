@@ -30,7 +30,7 @@ export function Chip({
                         </small>
                     </a>
                 ) : (
-                    <a href={linkPath} download>
+                    <a href={linkPath} target="_blank" download>
                         <small>{linkText}</small>
                     </a>
                 )}

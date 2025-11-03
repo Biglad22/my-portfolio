@@ -1,6 +1,6 @@
 /* font family import */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import "./utilities.css";
 /* font-family: 'Lato', sans-serif;
 font-family: 'Montserrat', sans-serif; */
 
@@ -127,7 +127,7 @@ html {
 }
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato",  'Montserrat', sans-serif;
     background-color: var(--first-bg);
 }
 
@@ -303,6 +303,9 @@ textarea:focus::placeholder {
 ::-webkit-scrollbar {
     display: none;
 }
+.link{
+    color: var(--sec-l-color);
+}
 
 /* ========styling for nav bar======================== */
 nav {
@@ -392,7 +395,7 @@ nav > .contacts > a:nth-child(2) {
     box-shadow: 0 0px 3px var(--sec-l-color);
 }
 
-.chip-wrapper .downloder {
+.chip-wrapper .downloader {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -402,7 +405,6 @@ nav > .contacts > a:nth-child(2) {
 
 /* ======== styling project card ======= */
 .project-card {
-    width: fit-content;
     height: fit-content;
     min-height: 35vh;
     max-height: 35vh;
@@ -413,6 +415,12 @@ nav > .contacts > a:nth-child(2) {
     background-color: var(--card-bg);
     border-radius: 0.4rem;
 }
+
+.product-card-img{
+    height: 2rem;
+    width: auto;
+}
+
 .project-active {
     height: fit-content;
     min-height: fit-content;
@@ -462,29 +470,39 @@ nav > .contacts > a:nth-child(2) {
 }
 
 /* ============== experience card style ================== */
-
 .xp-card {
-    flex: 1;
-    width: 100%;
     height: fit-content;
-    padding: calc(1.4rem + 4px) 1.4rem;
+    width:100%;
+    padding: 2rem;
     position: relative;
     background-color: var(--card-bg);
-    border-radius: 0.4rem;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.15);
     transition: all 0.5s ease-in-out;
 }
 
+.xp-card > .job_des{
+    list-style: none;
+    margin-top: 2rem;
+    color: var(--text-m);
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+    width: 100%;
+}
+
 .xp-header {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: var(--text-h);
+}
+.xp-company{
+    font-weight: 500;
 }
 .xp-company > span {
     margin-right: 1rem;
-    font-weight: 500;
     color: var(--text-h);
 }
-.xp-company > small {
+.xp-company > span:nth-child(2) {
+    display: inline-block;
     font-style: italic;
     color: var(--text-m);
 }
@@ -495,17 +513,44 @@ nav > .contacts > a:nth-child(2) {
     margin-bottom: 16px;
 }
 .other-proj-wrapper a {
-    color: var(--sec-l-color);
     text-transform: capitalize;
     font-size: inherit;
 }
-
-.other-proj-wrapper iframe {
+.other-proj-wrapper .iframe-container {
     width: 100%;
     height: 50vh;
-    border-radius: 0.4rem;
+    border-radius: 2rem;
+    position: relative;
 }
 
-.other-proj-wrapper iframe::-webkit-scrollbar {
+.other-proj-wrapper .iframe-container > .loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    transition: all 300ms;
+    background-color: var(--card-bg);
+}
+
+.other-proj-wrapper .iframe-container > .loader.isLoaded{
+    visibility: hidden;
+    transition: all 300ms;
+}
+
+
+.other-proj-wrapper .iframe-container > .loader.isLoading{
+    visibility:visible;
+    transition: all 300ms;
+}
+
+.other-proj-wrapper .iframe-container>iframe {
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.other-proj-wrapper .iframe-container>iframe::-webkit-scrollbar {
     display: none;
 }

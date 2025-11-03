@@ -1,13 +1,41 @@
 import React from "react";
-
-export const Experience = ({ job_title, company, year }) => {
+import { motion } from "motion/react";
+export const Experience = ({job_title, company, year, job_desc }) => {
     return (
-        <div className="xp-card">
-            <h5 className="xp-header">{job_title}</h5>
+        <motion.div 
+            className="xp-card"
+            
+            initial={{
+                y:"4rem",
+                opacity:0.5, 
+                borderRadius:0      
+            }}
+            whileInView={{
+                y:0,
+                opacity:1,  
+                borderRadius:"2rem"
+            }}
+            
+            transition={{
+                duration:0.3,
+                ease:"easeInOut",
+            }}
+            viewport={{amount:0.60, once:true}}
+        >
+            <h6 className="xp-header">{job_title}</h6>
             <p className="xp-company">
                 <span>{company}</span>
-                <small>{year}</small>
+                <span>({year})</span>
             </p>
-        </div>
+            {job_desc && <ul className="job_des">
+                {
+                    job_desc.map(desc=>(
+                        <li>
+                            {desc}
+                        </li>
+                    ))
+                }
+            </ul>}
+        </motion.div>
     );
 };

@@ -3,10 +3,6 @@ section {
     padding: 5vmin 10vw;
 }
 
-section:is(.bio) {
-    padding-block: 10vmin;
-}
-
 @media screen and (min-width: 1440px) {
     section {
         padding-inline: calc((100% - 1300px) / 2);
@@ -15,23 +11,19 @@ section:is(.bio) {
 
 .hero {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
     align-items: center;
     justify-content: center;
 }
-.hero > .hero-img {
-    flex-basis: calc(40% - 2.4rem);
-}
 .hero > .hero-img img {
-    max-height: 100%;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .hero > .name {
-    flex-basis: content;
+    grid-column: 2 / span 2;
 }
 
 .hero h1 {
@@ -62,6 +54,10 @@ section:is(.bio) {
     color: var(--text-m);
     font-weight: 400;
     padding-block: 8px;
+}
+
+.hero .skills-container{
+    justify-content: left;
 }
 
 .info-btn {
@@ -109,11 +105,11 @@ section:is(.bio) {
 
 /* =========styling for project section ========= */
 .projects h5 {
-    margin-bottom: 2.4rem;
+   margin-bottom: 2.4rem;
 }
 
 .xp-wrapper h5 {
-    margin-bottom: 1.4rem;
+   margin-bottom: 2.4rem;
 }
 
 .frontend > small,
@@ -124,6 +120,11 @@ section:is(.bio) {
     color: var(--text-m);
     margin-block: 1.2rem;
     display: block;
+}
+
+.frontend .cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .cards-wrapper {
@@ -140,7 +141,7 @@ section:is(.bio) {
 
 /*=============== other-projects styling ========*/
 .other-projects {
-    margin-block: 15vh;
+    margin-block: 2.4rem;
 }
 
 .other-projects .cards-wrapper {
@@ -153,18 +154,8 @@ section:is(.bio) {
 /*================responsiveness ========== media queries =============*/
 @media screen and (max-width: 1024px) {
     .hero {
-        flex-direction: column;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
     }
-    .hero > .hero-img {
-        flex: 1;
-        max-height: 50%;
-    }
-    .hero > .name {
-        flex: 0 1 content;
-        height: fit-content;
-    }
-
     .hero > .name > h1 {
         color: var(--text);
     }
@@ -203,7 +194,20 @@ section:is(.bio) {
     }
 }
 
+@media screen and (max-width:750px){
+    .hero {
+        grid-template-columns: 1fr;
+    }
+    .hero > .name {
+        grid-column: 1    
+    }
+    .frontend .cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media screen and (max-width: 555px) {
+    
     .hero > .name {
         text-align: center;
     }

@@ -7,9 +7,13 @@ import js from "./js.png";
 import vue from "./vue-logo.svg";
 import react from "./react.png";
 import tailwind from "./tailwind.png";
+import reactRouter from "./react-router-v7.png"
 import nodejs from "./nodejs.png";
 import typescript from "./typescript.png";
 import solana from "./solana.png";
+import python from "./python.png"
+import tanstackQuery from "./tanstack-query.png"
+import axios from "./axios.png"
 
 export const skills = [
     {
@@ -17,21 +21,21 @@ export const skills = [
         img: figma,
         color: "#F24E1E",
     },
-    {
-        name: "adobe xd",
-        img: xd,
-        color: "#FF61F6",
-    },
-    {
-        name: "html",
-        img: html,
-        color: "#E34F26",
-    },
-    {
-        name: "css",
-        img: css,
-        color: "#1572B6",
-    },
+    // {
+    //     name: "adobe xd",
+    //     img: xd,
+    //     color: "#FF61F6",
+    // },
+    // {
+    //     name: "html",
+    //     img: html,
+    //     color: "#E34F26",
+    // },
+    // {
+    //     name: "css",
+    //     img: css,
+    //     color: "#1572B6",
+    // },
     {
         name: "bootstrap",
         img: boot,
@@ -58,6 +62,11 @@ export const skills = [
         color: "#61DAFB",
     },
     {
+        name: "react-router-v7",
+        img: reactRouter,
+        color: "#D0021B",
+    },
+    {
         name: "typescript",
         img: typescript,
         color: "#3178C6",
@@ -68,8 +77,23 @@ export const skills = [
         color: "#339933",
     },
     {
+        name: "python",
+        img: python,
+        color: "#377EF0",
+    },
+    {
         name: "solana",
         img: solana,
         color: "#6B92D0",
+    },
+    {
+        name: "tanstack-query",
+        img: tanstackQuery,
+        color: "#FF9572",
+    },
+    {
+        name: "axios",
+        img: axios,
+        color: "#671ddf",
     },
 ];
