@@ -58,7 +58,7 @@ export function Home() {
         },{
             link:true,
             linkPath:"https://drive.google.com/file/d/1ULa3RpamzEIOgmX2tN2TMyLGpRbx_Kyi/view?usp=drive_link",
-            linkText:"download CV",
+            linkText:"view CV",
             emphasize:true
         }
     ]
